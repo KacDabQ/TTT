@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  background-color: rgb(155, 92, 203);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#title {
+  padding: 15px;
+  background-color: rgb(185, 141, 225);
+  border-radius: 10px;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px;
+  width: 175px;
+  justify-content: center;
+}
+
+#board > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+#board > .x::before {
+  content: "X";
+}
+
+#board > .x {
+  background-color: red;
+}
+
+#board > .o::before {
+  content: "O";
+}
+
+#board > .o {
+  background-color: blue;
+}
