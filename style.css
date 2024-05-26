@@ -16,7 +16,7 @@ body {
 #board {
   display: flex;
   flex-wrap: wrap;
-  margin: 100px;
+  margin: 10px;
   width: 175px;
   justify-content: center;
 }
